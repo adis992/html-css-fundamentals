@@ -1,0 +1,6 @@
+ /* Nije obavbeyan type naziv odnosno tip css-a*/
+  h1 {
+     color: rgb(117, 102, 187);    /*H1 ozncavamo (selektor)naslov u body color ga bojimo u navedenu boju (deklaracija-izgled)*/
+     font-style: italic;         /*Mozemo koristiti vise deklaracija */
+     }
+        

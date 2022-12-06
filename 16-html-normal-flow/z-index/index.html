@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Z-index</title>
+
+        <style>
+            div {
+                width: 180px;
+                height: 100px;
+                margin: 20px;
+            }
+
+
+            #box1 {
+                background-color: #F0C419;
+                position: relative;
+                top: 70px;  /*pomijeranje dolje*/
+                left: 50px;   /*pomijeranje  u desnu stranu- u prevodu lijevu stranux boxa guramo desno za toliko piksela koliko unesemo */
+
+                z-index: 1;  /*npr imamo 2 boxa jedan preok drugo....z svojstvo u pozitivnom  ili vecem broju od drugog z indexa ce biti prvi prikazan a ispod njega ce biti manji z-index */
+                    /*z index ima funkciju tek kada je u pitanju postion relative/ u suprotnom nece biti odradjena funkcija*/
+            }
+
+            #box2 {
+                background-color: #ED7161;
+                position: relative;
+                z-index: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="box1">
+        </div>
+
+        <div id="box2">
+        </div>
+
+    </body>
+
+</html>

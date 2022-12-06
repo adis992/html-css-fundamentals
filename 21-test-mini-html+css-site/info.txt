@@ -1,0 +1,8 @@
+Mini HTML sajt koji je kreiran u prethodnom assignmentu potrebno je unaprediti primenom stečenog znanja o CSS-u. Potrebno je uraditi sledeće:
+
+elemente stranica grupisati korišćenjem elemenata za grupisanje;
+sve stranice sajta koncipirati tako da glavna sekcija sajta bude podeljena u dve kolone; u levoj koloni treba da se nađe navigacija sa linkovima do različitih stranica, dok je desna kolona rezervisana za prikaz sadržaja;
+urediti osobine fontova (porodica, stil, veličina...) po sopstvenom nahođenju;
+listu koja se nalazi na dnu stranice Literary Work pretvoriti u tabelu sa sledećim kolonama: naslov dela, izdavač, mesto, godina.
+
+Prilikom rada na adaptaciji mini HTML sajta iz zadatka moguće je sprovesti i druga stilska unapređenja, po sopstvenom nahođenju.

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Basic Layout</title>
+      <style>
+        body {
+          width: 960px;
+          margin: 20px auto;   /*sa strana suzim cijeli sadrzaj za 20 piksela automatski*/
+        }
+
+        header {
+          border-bottom: 1px solid gray;  /*odvajanje okvira donjom linijom-prikazivanje odnje linije u boxu */
+          padding: 8px 0px 8px 0px;   /*unutrasnji razmax u hederu*/
+        }
+
+        nav {
+          padding: 14px 0px 14px 0px;
+          border-bottom: 1px solid gray;
+        }
+
+        footer {
+          padding: 16px 0px 16px 0px;   /*odvajanje foterra od ostalog sadrzaja*/
+          border-top: 1px solid blue;  /*u foteru linija iznad copyright-a*/
+        }
+
+        a {
+          margin-right: 6px;  /* odvajanje linkova u nav selekciji pomijeranje u desno */
+        }
+        section {
+          display: inline-block;
+          width: 600px;
+          padding: 0 8px 0 0;  /*sa desne strane contenta smo napravili npr sirinu 1 cm od sidebara ali smo morali smanjiti ukupnu velicinu sidebara da ne bih text prelazio opet ispod*/
+          border-right: 1px solid gray; 
+          
+          margin-bottom: 8px;
+          
+        }
+        aside {
+          display: inline-block;
+          width: 343px;
+          vertical-align: top;  /*vertikalno ravnanje sidebara i conteta*/
+          padding: 0 0 0 8px;
+        }
+      </style>
+    </head>
+      <header>
+        <div id="header">   <!-- div nema nekog znacaja kada je sam u htmlu nego samo u kombinaciji sa css-om
+        preporuka izbacivanja elementa div i koristenja semantickih elemenata header, nav i sl, -->
+          <img src="logo.png" alt="Our company logo">
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            
+        </nav>
+
+        <h1>Home</h1>
+
+        <section>
+             <h2>Main Content</h2>
+            <p>Još jednu zanimljivu stvar potrebno je primetiti u prikazanom primeru. Naime, možete videti da je centralni div sa sadržajem odvojen praznim prostorima od elemenata ispod i iznad. Reč je o još jednoj situaciji u kojoj dolazi do pojave stapanja margina. Ovaj pojam spomenut je u jednoj od prethodnih lekcija, kada je bilo reči o CSS Box Modelu. Tada ste mogli da vidite da se susedne (top i bottom i bottom i top) margine stapaju u jednu koja je jednaka većoj margini. I sada dolazi do slične pojave, ali između margina na istim ivicama parrent i child elemenata. Naime, u primeru h1 element poseduje top marginu koja je automatski postavljena od strane browsera. S obzirom na to da je reč o prvom elementu unutar div-a, njegova gornja margina stapa se sa gornjom marginom roditeljskog elementa i prelazi na roditeljski element. Ista situacija događa se i na donjoj ivici div elementa sa sadržajem, gde donja margina paragrafa prelazi na roditeljski element. Tako se dobija utisak da sam div element poseduje definisane gornje i donje margine, iako tako nešto nije slučaj. Kod ostalih div elementa u primeru ovakvog ponašanja nema zato što oni ne poseduju elemente sa automatski definisanim marginama.</p>
+            <p>Još jednu zanimljivu stvar potrebno je primetiti u prikazanom primeru. Naime, možete videti da je centralni div sa sadržajem odvojen praznim prostorima od elemenata ispod i iznad. Reč je o još jednoj situaciji u kojoj dolazi do pojave stapanja margina. Ovaj pojam spomenut je u jednoj od prethodnih lekcija, kada je bilo reči o CSS Box Modelu. Tada ste mogli da vidite da se susedne (top i bottom i bottom i top) margine stapaju u jednu koja je jednaka većoj margini. I sada dolazi do slične pojave, ali između margina na istim ivicama parrent i child elemenata. Naime, u primeru h1 element poseduje top marginu koja je automatski postavljena od strane browsera. S obzirom na to da je reč o prvom elementu unutar div-a, njegova gornja margina stapa se sa gornjom marginom roditeljskog elementa i prelazi na roditeljski element. Ista situacija događa se i na donjoj ivici div elementa sa sadržajem, gde donja margina paragrafa prelazi na roditeljski element. Tako se dobija utisak da sam div element poseduje definisane gornje i donje margine, iako tako nešto nije slučaj. Kod ostalih div elementa u primeru ovakvog ponašanja nema zato što oni ne poseduju elemente sa automatski definisanim marginama.</p>
+        </section><aside> <!-- ako stavimo aside ili bilo sta ispod section time smo napravili space-razmak dok na ovaj nacin nema razmaxa i kad uzmemo u obzit velicinu smanjimo pixele kada pomijeramo sidebar i content jedan pored drugog -->
+          <h2>Side Content</h2>
+          <p>Još jednu zanimljivu stvar potrebno je primetiti u prikazanom primeru. Naime, možete videti da je centralni div sa sadržajem odvojen praznim prostorima od elemenata ispod i iznad. Reč je o još jednoj situaciji u kojoj dolazi do pojave stapanja margina. Ovaj pojam spomenut je u jednoj od prethodnih lekcija, kada je bilo reči o CSS Box Modelu. Tada ste mogli da vidite da se susedne (top i bottom i bottom i top) margine stapaju u jednu koja je jednaka većoj margini. I sada dolazi do slične pojave, ali između margina na istim ivicama parrent i child elemenata. Naime, u primeru h1 element poseduje top marginu koja je automatski postavljena od strane browsera. S obzirom na to da je reč o prvom elementu unutar div-a, njegova gornja margina stapa se sa gornjom marginom roditeljskog elementa i prelazi na roditeljski element. Ista situacija događa se i na donjoj ivici div elementa sa sadržajem, gde donja margina paragrafa prelazi na roditeljski element. Tako se dobija utisak da sam div element poseduje definisane gornje i donje margine, iako tako nešto nije slučaj. Kod ostalih div elementa u primeru ovakvog ponašanja nema zato što oni ne poseduju elemente sa automatski definisanim marginama.</p>
+        </aside>
+        <footer>
+            Copyright © LINK group
+        </footer>
+      </body>
+</html>

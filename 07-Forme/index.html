@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <title>Forms</title>
+    </head>
+ <ul style="color:blueviolet;">Kreiranje textbox-a uz unos txt-a bez buttona send or register</ul>
+    <body>
+        <form action="script.php" method="POST" enctype="multipart/form-data" name="demo_formuser" id="demo-formpwd">
+            <label for="name">Name:</label>    <!--label ide uz id od input elementa-->
+            <input type="text" id="name">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </form>
+    </body>
+
+  <hr>      <!--napravi crtu izmedju 2 ili vise pasusa-->
+ <ol style="color:aqua;" >Oznacen automatski button radio </ol>
+   <body>
+       <form action="script1.php" method="POST" enctype="multipart/form-data" name="demo_form" id="demo-form">
+           <input name="country" type="radio" id="Serbia" value="Serbia" checked="checked" >
+           <label for="Serbia">Serbia</label>
+
+           <br />  <!--prebaci u novi red-->
+
+           <input name="country" type="radio" id="Romania" value="Romania">
+           <label for="Romania">Romania</label>
+
+           <br />
+
+           <input name="country" type="radio" id="Ukraine" value="Ukraine">
+           <label for="Ukraine">Ukraine</label>
+           
+       </form>
+   </body>
+
+ <hr>
+ <p style="color:red;" >CHeckBox na stranici</p>          <!--li ima kruzic umjesti rednog broja-->
+   <body>
+       <form action="script2.php" method="POST" enctype="multipart/form-data" name="demo_form" id="demo-form">
+           <input type="checkbox" name="question" value="Like" id="question">
+           <label for="question">I like HTML</label>
+
+           <input type="submit" value="Submit">
+       </form>
+   </body>
+
+ <hr>
+
+ <p style="color:bisque;">Input number </p>
+    <body>
+        <form action="script2.php" method="POST" enctype="multipart/form-data" name="demo_form" id="demo-form">
+            <input type="number" name="quantity" min="1" max="5">
+        </form>
+    </body>
+    <hr>
+ <p>Input color</p>
+
+    <body>
+        <form action="script2.php" method="POST" enctype="multipart/form-data" name="demo_form" id="demo-form">
+            <input type="color" name="favcolor">
+        </form>
+    </body>
+
+  <p>Input range</p>     <!--izgleda kao linija na kojoj moze pojacati i smanjiti u opsegu zadanom u range min max-->
+    <body>
+        <form action="script2.php" method="POST" enctype="multipart/form-data" name="demo_form" id="demo-form">
+            <input type="range" name="points" min="0" max="10">
+        </form>
+    </body>
+
+  <p>Textare</p>  <!--omogucava da se unosi viselinijski txt-->
+    
+    <body>
+       <form action="script2.php" method="POST" enctype="multipart/form-data" name="demo_form" id="demo-form">
+           <textarea id="description" name="description"> Lore ipsum </textarea> 
+           <button>Send data</button>
+       </form>
+   </body>
+
+ <hr>
+   <p>Select element</p>  <!--odabir elementa i oznake....drop-down izgled-->
+   <body>
+       <form action="script2.php" method="POST" enctype="multipart/form-data" name="demo_form" id="demo-form">
+            <select name="country" id="country">
+              <option value="Serbia">Serbia</option>
+              <option value="Romania" selected="selected">Romania</option>
+              <option value="Ukraine">Ukraine</option>
+            </select>
+        </form>
+    
+    </body>
+ <hr>
+    <p>Grupisanje elemata forme</p>
+    
+    <body>
+        <form action="script2.php" method="POST" enctype="multipart/form-data" name="demo_form" id="demo-form">
+            <fieldset>
+                <legend>Personal info</legend>    <!--legend naziv a fieldset oznacava pravougaonik sa naslovom uz 2 txtboxa ispod-->
+                <label for="name">First name:</label><br>
+                <input type="text" name="name" id="name"><br>
+                
+                <label for="surname">Last name:</label><br>
+                <input type="text" name="surname" id="surname"><br>
+                </fieldset>
+                
+                <fieldset>
+                <legend>Contact</legend>
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" id="email"><br>
+                
+                <label for="phone">Phone:</label><br>
+                <input type="number" name="phone" id="phone">
+                </fieldset>
+        </form>
+    </body>
+</html>

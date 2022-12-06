@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Basics Css Selector</title>
+        <style type="text/css">
+
+            * {       /*  ovaj selector * selektovanje svih elemenata i neko dr elementa o*/
+                color: pink;   /*ako bih stavio DIV ispred color obojit ce samo div navedene u body*/
+            }     /*Ako zelim selektovati npr paragrafe samo stavim p1 ili naslve h1 pa onda navedemo svojstvo i vrijednost*/
+        </style>
+
+        <!--Imamo jos slektovanje sa CLASS elemtntom sa vriejdnoscu atr. content ce obojiti sve sa class cont. npr u head (.contet u prevodu naziv klase i ostalo odradimo kao prethodne primjere)-->
+    </head>
+    <body>
+        <h1>Main Heading</h1>
+        <p>Paragraph 0. Not in a div.</p>
+            <div id="first-div" class="content">  <!--Div element se koristi za grupisanje veceg broja elementata  id i class oznacavanj elemenata-->
+                <p>Paragraph 1.  in a div.</p>
+                <p>Paragraph 2.  in a div.</p>
+                <div id="second-div">
+                     <p>Paragraph 3. in the 2nd div.</p>
+                     <!--Ako bih bojali sa CLASS elem. i ovaj bi bio isteboje kao 1 i 2 jer nasledjuje od roditelja i ne treba navoditi isto ide i sa ID elem.-->
+                </div>
+           </div>
+           <p>Paragraph 4. Not in a div.</p>
+           <p>Paragraph 5. Not in a div.</p>
+           <!--Selektovanje na relacijama kada bih u head stavili "#first-div p" pa viticasta i odabremo boju i to ce obuhvatiti id element sa atr first div i naslijedit ce 3 od 1 i 2-e -->
+           <!--Selektovanje na relacijama kada bih u head stavili "#first-div > p" pa viticasta i odabremo boju i to ce obuhvatiti id element sa atr first div...selektovat ce samo 1 i 2 -->  
+           <!--Selektovanje na relacijama kada bih u head stavili "#first-div + p" pa viticasta i odabremo boju i to ce obuhvatiti id element sa atr first div...selektovat ce samo naredni nakon first div plus nasljedni...tako da odabere samo 4 -->
+           <!--Selektovanje na relacijama kada bih u head stavili "#first-div tilda p" pa viticasta i odabremo boju i to ce obuhvatiti id element sa atr first div...selektovat ce sve nakon first div i nasljednika 4 i 5 -->    
+    </body>
+</html>

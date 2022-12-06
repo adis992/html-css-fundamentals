@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+       <meta charset="UTF-8">
+       <title>Tables</title>
+    </head>
+ <body>
+    <h1>Kreiranje tablice</h1>
+    <table border="1">     <!--Kreiranje tablice, bez ovog atributa imamo brojeve u 3 red visinski i u stranu 4 broja-->
+        <tr>         <!--Red po visini stranice -->
+            <td>1</td>    <!--celije (ajmo reci brojevi 1 2 3 4 horizontalno)-->
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+ </body>
+ <hr>
+ <pre>
+  <body>
+    <h2>Kreiranje tabele sa naslovima table headingom ili th</h2>
+    <table border="1">
+        <tr>
+            <th>*</th>       <!--naslov reda (table heading-th)-->
+            <th>Ponedjeljak</th>
+            <th>Utorak</th>
+            <th>srijeda</th>
+            <th>cetvrtak</th>
+            <th>petak</th>
+        </tr>
+        <tr>
+            <th>jutro</th>
+            <td>dorucak</td>
+            <td>dorucak</td>
+            <td>dorucak</td>
+            <td>dorucak</td>
+            <td>dorucak</td>
+        </tr>
+        <tr>
+            <th>vecer</th>
+            <td>spavanje</td>
+            <td>spavanje</td>
+            <td>spavanje</td>
+            <td>spavanje</td>
+            <td>spavanje</td>
+        </tr>
+    </table>
+  </body>
+ </pre>
+
+ <hr>
+ <pre>
+    <body>
+        <h3>Spajanje 2 celije po horizontali </h3>
+        <table border="1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="2">4</td>  <!--spajanje dvije celije u horizontali ili 1 hor. redu... 4+5 u 1 celiju colspan atr.-->
+                <td>6</td>
+            </tr>
+        </table>
+    </body>
+ </pre>
+ <hr>
+ <pre>
+    <body>
+        <h4>Spajanje 2 celije po vertikali</h4>
+        <table border="1">
+            <tr>
+                <td rowspan="2">1</td>     <!--spajanje 2 celije po vertikali-->
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+    </body>
+ </pre>
+ <hr>
+ <pre>
+    <body>
+        <H5>Html tabele mogu imati region, tijelo i dno (THEAD,TBODY I TFLOOT) </H5>   
+        <table border="1">
+            <thead>      <!-- zaglavlje tabele-->
+                <tr>
+                    <td>header cell</td>
+                </tr>
+                <tr>
+                    <td>header cell</td>
+                </tr>
+            </thead>
+            <tfoot>         <!-- dno tabele-->
+                <tr>
+                    <td>footer cell</td>
+                </tr>
+                <tr>
+                    <td>footer cell</td>
+                </tr>
+            </tfoot>
+            <tbody>         <!-- tijelo tabele-->
+                <tr>
+                    <td>body cell</td>
+                </tr>
+                <tr>
+                    <td>body cell</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+  </pre>
+  <hr>
+
+  <p>Copyright &copy; Mucenje-Ucenje</p>
+
+
+</html>

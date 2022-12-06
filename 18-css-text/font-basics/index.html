@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Georgia;
+        }
+        .serif {
+            font-family: serif
+
+        }
+        .sans-serif {
+            font-family: sans-serif
+            
+        }
+        .monospace {
+            font-family: monospace
+            
+        }
+        p {
+            font-weight: bold;
+            color: darkred;
+            text-indent: 50px; /*uvlacenje txta odnosno pomijeranje pocetka pasusa za onoliko px koliko smo i zadali vrijednost*/
+            letter-spacing: 1px; /*razmak izmedju slova karaktera*/
+            word-spacing: 16px;  /*razmak izmedju 2 ili vise rijeci odnosno u ovom primjeru cijelog paragrafa*/
+            line-height: 40px; /*razmak izmedju linij, npr izmedju 2 reda txta*/
+            /*text-transformation upercase ili lowercase; sluzi za prevodjenje cijelog texta odnosno paragrafa u mala ili velika slova*/
+            /*text-decoration: underline; koristi se za podvlacenje cijelog txta i imamo vise opcija dekoracije tipa blinkanje txta i sl.*/
+        }
+
+        p.text-size
+         {
+            font-size: 22px;
+            line-height: 20px;
+            word-spacing: 8px;
+        }
+    </style>
+</head>
+<body>
+    <p><span class="serif">serif</span> <span class="sans-serif">sans serif</span> <span class="monospace">monospace</span></p>
+    <p>
+        Još jedan od načina za korišćenje fontova koji nisu smešteni na klijentskom uređaju podrazumeva korišćenje takozvanih web fontova. To je pristup koji na današnjem modernom webu poseduje veliku popularnost, pa čak i sam Google poseduje repozitorijum sa velikim brojem takvih fontova, koje je moguće besplatno koristiti (https://fonts.google.com/). Njihova upotreba zasniva se na uključivanju određenog fonta u HTML dokument korišćenjem link elementa:
+    </p>
+
+    <p class="text-size">
+        Još jedan od načina za korišćenje fontova koji nisu smešteni na klijentskom uređaju podrazumeva korišćenje takozvanih web fontova. To je pristup koji na današnjem modernom webu poseduje veliku popularnost, pa čak i sam Google poseduje repozitorijum sa velikim brojem takvih fontova, koje je moguće besplatno koristiti (https://fonts.google.com/). Njihova upotreba zasniva se na uključivanju određenog fonta u HTML dokument korišćenjem link elementa:
+    </p>
+</body>
+</html>

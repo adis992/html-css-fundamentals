@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Float+Clear</title>
+
+        <style>
+            #container1 div {
+                width: 200px;
+                height: 100px;
+                margin: 20px;
+                background-color: #F0C419;
+
+                float: left;       /*elementi idu s lijevo na desno kao na inline*/
+                /*floatovani elementi nemaju visinu */ 
+            }
+
+
+            #container2 {
+                height: 100px;
+                margin: 20px;   /*vanjski razmak u boxu */
+                background-color: #ED7161;
+                clear: left;
+                    /*clear opcija ide u zasebnom-novom redu ispod elemenata postojecih*/
+                 /*svojstvo clear moze left right booth*/
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="container1">
+            <div id="box1">
+            </div>
+
+            <div id="box2">
+            </div>
+
+            <div id="box3">
+            </div>
+
+            <div id="box4">
+            </div>
+
+            <div id="box5">
+            </div>
+
+            <div id="box6">
+            </div>
+        </div>
+
+        <div id="container2">
+
+        </div>
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Css Basics</title>
+           <!--Ovo ispod je primjer internog css stilizovanja i nalazi se uvijek unutar html doc-a *(externi-najvise se koristi,linijskijos imamo)-->
+     <!--   <style type="text/css">  /* Nije obavbeyan type naziv odnosno tip css-a*/
+            h1 {
+                color: rgb(117, 102, 187);    /*H1 ozncavamo (selektor)naslov u body color ga bojimo u navedenu boju (deklaracija-izgled)*/
+                font-style: italic;         /*Mozemo koristiti vise deklaracija */
+            }
+        </style>          komentirao sam sve jer smo kreirali style.css  i pravimo externi css
+        -->
+        <link rel="stylesheet" href="style.css" type="text/css">  <!--linkovanje css doc externa stilizacija-->
+    </head>
+    <body>
+        <h1>This is heading</h1>
+        <h2 style="color: blue;">Primjer linijskog deklariranja</h2>  <!--u linijskom deklariranju idemo svaki element pojedinacno kao uprimjeru lijevo-->
+        <!--Redoslijed stilizacije ide linijski pa interno pa externa-->
+        <!---->
+    </body>
+</html>
